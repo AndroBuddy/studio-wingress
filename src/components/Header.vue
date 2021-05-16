@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="@/assets/wingress.svg"/>
+    <img src="@/assets/wingress.svg" onclick="location.href='index.html';" class="cursor-pointer"/>
   </header>
 </template>
 
@@ -9,8 +9,3 @@ export default {
   name: 'Header'
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
