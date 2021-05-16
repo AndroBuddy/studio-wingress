@@ -2,7 +2,7 @@
   <div class="flex flex-col h-screen p-8 text-white">
     <Header/>
       <div :class="{'justify-center': isActive, 'font-bold': isActive}" class="flex flex-1 items-center sm:text-2xl">
-        <p @mouseover="mouseIn" v-if="studio" class="cursor-pointer">stud/o<span class="ml-4 text-blue-400">w/ngress</span>.</p>
+        <p @mouseover="mouseIn" v-if="studio" class="cursor-pointer text-2xl">stud/o<span class="ml-4 text-blue-400">w/ngress</span>.</p>
         <div v-if="wingress" @click="about" class="cursor-pointer">
           <img src="./assets/logo.svg"/>
         </div>

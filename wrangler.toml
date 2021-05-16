@@ -1,0 +1,9 @@
+name = "wingress"
+type = 'webpack'
+account_id = 'c2ab8295b0f0e7f2f93711d1337d3ca4'
+route = ''
+zone_id = ''
+usage_model = ''
+workers_dev = true
+target_type = "webpack"
+site = {bucket = "dist",entry-point = "workers-site"}
