@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col h-screen p-8 text-white">
+  <div class="flex flex-col min-h-screen lg:max-h-screen p-8 text-white">
     <Header/>
-      <div :class="{'justify-center': isActive, 'font-bold': isActive}" class="flex flex-1 items-center sm:text-2xl">
-        <p @mouseover="mouseIn" v-if="studio" class="cursor-pointer text-2xl">stud/o<span class="ml-4 text-blue-400">w/ngress</span>.</p>
-        <div v-if="wingress" @click="about" class="cursor-pointer">
-          <img src="./assets/logo.svg"/>
-        </div>
-        <About v-if="aboutVisibility"/>
+      <div class="flex flex-col flex-1 justify-around sm:text-2xl">
+        <p class="text-2xl pt-8 font-bold self-center">
+          stud/o<span class="ml-4 text-blue-400">w/ngress</span><br>
+          <span class="text-gray-500">---------------</span>
+        </p>
+        <About class="pb-24 sm:pb-0"/>
       </div>
     <Footer class="invisible sm:visible h-0 sm:h-auto"/>
     <RespFooter class="visible sm:invisible sm:h-0"/>
@@ -26,25 +26,6 @@ export default {
     Footer,
     About,
     RespFooter
-  },
-  data() {
-    return {
-      wingress: false,
-      studio: true,
-      aboutVisibility: false,
-      isActive: true
-    }
-  },
-  methods: {
-    mouseIn: function() {
-      this.wingress = true
-      this.studio = false
-    },
-    about: function() {
-      this.aboutVisibility = true
-      this.wingress = false
-      this.isActive = false
-    }
   }
 }
 </script>

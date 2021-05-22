@@ -1,6 +1,5 @@
 <template>
-  <div class="flex flex-col sm:ml-6 lg:ml-12 xl:ml-12">
-    <span class="material-icons-outlined cursor-pointer" onclick="location.href='index.html';">arrow_back</span><br>
+  <div class="flex flex-col sm:m-6 lg:m-12 xl:m-12">
     <p class="font-bold">he\\o there - <span class="text-blue-400">Anirudh Chimpidi</span> 👋</p>
     <br>
     <p class="text-gray-500">
